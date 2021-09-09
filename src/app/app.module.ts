@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { AboutComponent } from './about/about.component';
 import { TestComponent } from './test/test.component';
+import { Test1Component } from './test1/test1.component';
 var routes:Routes=
 [
   {path:'usser' ,component:UserComponent},
@@ -44,7 +45,8 @@ var routes:Routes=
     UserComponent,
     AdminComponent,
     AboutComponent,
-    TestComponent
+    TestComponent,
+    Test1Component
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes),HttpClientModule,FormsModule,ReactiveFormsModule,LoadingBarRouterModule,LoadingBarHttpClientModule
