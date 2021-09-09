@@ -9,6 +9,7 @@ import {RouterModule,Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { AboutComponent } from './about/about.component';
+import { TestComponent } from './test/test.component';
 var routes:Routes=
 [
   {path:'usser' ,component:UserComponent},
@@ -42,7 +43,8 @@ var routes:Routes=
     AppComponent,
     UserComponent,
     AdminComponent,
-    AboutComponent
+    AboutComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes),HttpClientModule,FormsModule,ReactiveFormsModule,LoadingBarRouterModule,LoadingBarHttpClientModule
