@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="form-group" style="max-width:900px">
+        <ng-container *ngFor="let skill of skillsarray.controls;let i=index">
+        <form [formGroup]="skill">
+            
+            <label>Skill Name:-</label><br><input type="text" style="max-width:450px;" class="form-control" formControlName="skill_name">
+            <label>Skill Level:-</label><br>
+            <select formControlName="skill_level" style="max-width:450px;" class="form-control">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        
+            </form>
+        </ng-container>
+        <button (click)="addSkill()" class="btn btn-primary mt-3">ADD More Skills</button>
+    <button (click)="submitData()" class="btn btn-success btn-right mt-3 float-right">Next</button>
+    </div>
+    
+</div>

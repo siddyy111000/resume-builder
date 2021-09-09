@@ -1,0 +1,67 @@
+<body><div class="container">
+    <form [formGroup]="academicsData" class="form-group">
+        
+            <div class="row">
+                <div class="col-6-sm m-4">
+        <h4>Post Graduation</h4><br>
+        <hr>
+        
+           
+            <label>Degree:</label><br>
+            <input type="text" formControlName="post_graduate_degree" class="form-control">
+            <br>
+            <label>From where did you completed this degree:</label><br>
+            <input type="text" formControlName="post_graduate_degree_clg" class="form-control">
+            <br>
+            <label>Score:</label><br>
+            <input type="text" formControlName="post_graduate_degree_per" class="form-control">
+        </div>
+        <div class="col-6-sm m-4">
+        <h4>Graduation</h4><br>
+        <hr>
+        
+           
+            <label>Degree:</label><br>
+            <input type="text" formControlName="graduate_degree" class="form-control" >
+            <br>
+            <label>From where did you completed this degree:</label><br>
+            <input type="text" formControlName="graduate_degree_clg" class="form-control">
+            <br>
+            <label>Score:</label><br>
+            <input type="text" formControlName="graduate_degree_per" class="form-control">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-6-sm m-4">
+        <h4>HSC/Diploma</h4><br>
+        <hr>
+        
+           
+            <label>HSC/Diploma:</label> 
+            <input type="Radio" formControlName="hsc_diploma_choice" value="Diploma" >Diploma 
+            <input type="Radio" formControlName="hsc_diploma_choice" value="HSC" >HSC
+            <br>
+            <label>From where did you completed this degree:</label><br>
+            <input type="text" formControlName="hsc_diploma_clg" class="form-control">
+            <br>
+            <label>Score:</label><br>
+            <input type="text" formControlName="hsc_diploma_per" class="form-control">
+        </div>
+        <div class="col-6-sm m-4">
+            <h4>SSC</h4><br>
+            <hr>
+            
+               
+                
+                <label>From where did you completed this degree:</label><br>
+                <input type="text" formControlName="ssc_clg" class="form-control">
+                <br>
+                <label>Score:</label><br>
+                <input type="text" formControlName="ssc_per" class="form-control">
+            </div>
+        </div>
+        <button (click)="addAcademics()" class="btn gobtn">Next</button>
+    </form>
+</div>
+</body>

@@ -1,0 +1,202 @@
+<!-- <div class="container-fluid resume">
+    <div class="row">
+        <div class="col">
+            <div class="personalDetails">
+                <h1 class="display-5">{{thisresume.name|uppercase}}</h1><br>
+                <p>{{thisresume.description}}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="contactDetails float-right text-right">
+                {{thisresume.ph_no}} <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                  </svg> <br>
+                  {{thisresume.email}} <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg> <br>
+                  {{thisresume.address}} <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-compass" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15.016a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13zm0 1a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15z"/>
+                    <path d="M6 1a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1zm.94 6.44l4.95-2.83-2.83 4.95-4.95 2.83 2.83-4.95z"/>
+                  </svg> 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col float-left">
+            <h1 class="display-5" style="color:seashell;background-color: rgb(52, 134, 117);">EDUCATION</h1><hr style="color:rgb(139, 110, 75);">
+            <div class="postgraduation" *ngIf="thisresumeacademics.post_graduate_degree!=''" >
+                <h3 class="display-6">Post Graduation</h3>
+                <p class="font-weight-bold">Degree: {{thisresumeacademics.post_graduate_degree}}</p>
+                <p class="font-weight-bold">College: {{thisresumeacademics.post_graduate_degree_clg}}</p>
+                <p class="font-weight-bold">Aggregate: {{thisresumeacademics.post_graduate_degree_per}}</p>
+            </div>
+            <div class="postgraduation" *ngIf="thisresumeacademics.graduate_degree!=''" >
+                <h3 class="display-6">Graduation</h3>
+                <p class="font-weight-bold">Degree: {{thisresumeacademics.graduate_degree}}</p>
+                <p class="font-weight-bold">College: {{thisresumeacademics.graduate_degree_clg}}</p>
+                <p class="font-weight-bold">Aggregate: {{thisresumeacademics.graduate_degree_per}}</p>
+            </div>
+            <div class="postgraduation" *ngIf="thisresumeacademics.hsc_diploma_choice=='HSC'" >
+                <h3 class="display-6">HSC</h3>
+                <p class="font-weight-bold">College: {{thisresumeacademics.hsc_diploma_clg}}</p>
+                <p class="font-weight-bold">Aggregate {{thisresumeacademics.hsc_diploma_per}}</p>
+            </div>
+            <div class="postgraduation" *ngIf="thisresumeacademics.hsc_diploma_choice=='DIPLOMA'" >
+                <h3 class="display-6">DIPLOMA</h3>
+                <p class="font-weight-bold">College: {{thisresumeacademics.hsc_diploma_clg}}</p>
+                <p class="font-weight-bold">Aggregate {{thisresumeacademics.hsc_diploma_per}}</p>
+            </div>
+            <div class="postgraduation" *ngIf="thisresumeacademics.ssc_per!=''" >
+                <h3 class="display-6">SSC</h3>
+                <p class="font-weight-bold">School: {{thisresumeacademics.ssc_clg}}</p>
+                <p class="font-weight-bold">Aggregate {{thisresumeacademics.ssc_per}}</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="Skills">
+                <h1 class="display-5" style="color:seashell;background-color: rgb(52, 134, 117);">Skills</h1>
+                
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+ <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+ <div class="container" id="resume">
+   <div class="header">
+     <div class="full-name">
+       <span class="first-name">{{thisresume.name}}</span> 
+       
+     </div>
+     <div class="contact-info">
+       <span class="email">Email: </span>
+       <span class="email-val">{{thisresume.email}}</span>
+       <span class="separator"></span>
+       <span class="phone">Phone: </span>
+       <span class="phone-val">{{thisresume.ph_no}}</span>
+     </div>
+     
+     <div class="about">
+       <span class="position">{{thisresume.position}} </span>
+       <span class="desc">
+         {{thisresume.description}} 
+       </span>
+     </div>
+   </div>
+    <div class="details">
+     <!-- <div class="section">
+       <div class="section__title">Experience</div>
+       <div class="section__list">
+         <div class="section__list-item">
+           <div class="left">
+             <div class="name">KlowdBox</div>
+             <div class="addr">San Fr, CA</div>
+             <div class="duration">Jan 2011 - Feb 2015</div>
+           </div>
+           <div class="right">
+             <div class="name">Fr developer</div>
+             <div class="desc">did This and that</div>
+           </div>
+         </div>
+                 <div class="section__list-item">
+           <div class="left">
+             <div class="name">Akount</div>
+             <div class="addr">San Monica, CA</div>
+             <div class="duration">Jan 2011 - Feb 2015</div>
+           </div>
+           <div class="right">
+             <div class="name">Fr developer</div>
+             <div class="desc">did This and that</div>
+           </div>
+         </div>
+ 
+       </div>
+     </div> -->
+    
+     <div class="section">
+       <div class="section__title">Education</div>
+       <div class="section__list">
+         <div class="section__list-item" *ngIf="thisresumeacademics.post_graduate_degree!=''">
+           <div class="left" >
+             <div class="name">{{thisresumeacademics.post_graduate_degree}}</div>
+             <div class="addr">{{thisresumeacademics.post_graduate_degree_clg}}</div>
+             <div class="duration">{{thisresumeacademics.post_graduate_degree_per}}</div>
+           </div>
+          </div>
+          <div class="section__list-item" *ngIf="thisresumeacademics.graduate_degree!=''">
+           <div class="left" >
+             <div class="name">{{thisresumeacademics.graduate_degree}}</div>
+             <div class="addr">{{thisresumeacademics.graduate_degree_clg}}</div>
+             <div class="duration">{{thisresumeacademics.graduate_degree_per}}</div>
+           </div>
+          </div>
+           <div class="section__list-item" *ngIf="thisresumeacademics.hsc_diploma_choice=='Diploma' && thisresumeacademics.hsc_diploma_choice!=''">
+            <div class="left" >
+              <div class="name">Diploma</div>
+              <div class="addr">{{thisresumeacademics.hsc_diploma_clg}}</div>
+              <div class="duration">{{thisresumeacademics.hsc_diploma_per}}</div>
+            </div>
+          </div>
+          <div class="section__list-item" *ngIf="thisresumeacademics.hsc_diploma_choice=='HSC' && thisresumeacademics.hsc_diploma_choice!=''">
+              <div class="left">
+                <div class="name">HSC</div>
+                <div class="addr">{{thisresumeacademics.hsc_diploma_clg}}</div>
+                <div class="duration">{{thisresumeacademics.hsc_diploma_per}}</div>
+              </div>
+            </div>
+            <div class="section__list-item"  *ngIf="thisresumeacademics.ssc_per!=''">
+              <div class="left">
+                <div class="name">SSC</div>
+                <div class="addr">{{thisresumeacademics.ssc_clg}}</div>
+                <div class="duration">{{thisresumeacademics.ssc_per}}</div>
+              </div>
+            </div>
+           
+         </div>
+ 
+       </div>
+       
+   
+      <div class="section">
+       <div class="section__title">Projects</div> 
+        <div class="section__list" *ngFor="let project of thisresumeprojects">
+          <div class="section__list-item">
+            <div class="name">{{project.project_title}}</div>
+            <div class="text">{{project.project_desc}}</div>
+          </div>
+          
+          
+        </div>
+     </div>
+      <div class="section">
+        <div class="section__title">Skills</div>
+        <div class="skills">
+          <div class="skills__item" *ngFor="let skill of thisresumeskills">
+            <div class="left"><div class="name">
+              {{skill.skill_name}}
+              </div></div>
+            <div class="right">
+                {{skill.skill_level}}
+ 
+            </div>
+          </div>
+          
+        </div>
+       
+            
+          
+        </div>
+      <div class="section">
+      <div class="section__title">
+        Hobbies
+        </div>
+        <div class="section__list">
+          <div class="section__list-item" *ngFor="let hobby of thisresumehobbies">
+                   {{hobby.hobby_name|uppercase}}
+           </div>
+        </div>
+      </div>
+      </div>
+   </div>
+ <button class="btn btn-primary" (click)="printResume()">Print</button>

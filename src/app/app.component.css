@@ -1,0 +1,12 @@
+.navbar-custom{
+background-color: rgba(219, 231, 210, 0.836);
+}
+.navbar-custom-item{
+text-transform: uppercase;
+}
+.navbar-custom-item:hover,.item-active
+{
+    background-color:rgb(156, 201, 166);
+    color:#fff;
+    font-weight: bolder;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="form-group" style="max-width:900px">
+        <ng-container *ngFor="let hobby of hobbiesarray.controls">
+        <form [formGroup]="hobby">
+            
+            <label>Hooby Name</label><br><input type="text" style="max-width:450px;" class="form-control" formControlName="hobby_name">
+        
+            </form>
+        </ng-container>
+        <button (click)="addHobby()" class="btn btn-primary mt-3">Add Hobby</button>
+    <button (click)="submitData()" class="btn btn-success btn-right mt-3 float-right">Next</button>
+    </div>
+</div>

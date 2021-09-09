@@ -1,0 +1,42 @@
+
+    <div class="container">
+            <span>Personal</span>
+   
+        
+        <form class="form-group"[formGroup]="personalData">
+        <div>
+        <label>Name:</label><span class='required'>*</span><br><input class="form-control" type="text" formControlName='name'><br>
+        <div class="warning" *ngIf="personalData.controls.name.dirty && personalData.controls.name.invalid">
+            <span *ngIf="personalData.controls.name.errors.required">Name cannot be empty</span>
+            <span  *ngIf="personalData.controls.name.errors.minlength">Name should be minimum 3 letters</span>
+        </div>
+        </div>
+        <div>
+            <label>DOB:</label><br><input class="form-control" type="date" formControlName='dob'><br>
+            <span class="warning" *ngIf="personalData.controls.dob.dirty && personalData.controls.dob.invalid">
+                <span *ngIf="personalData.controls.dob.errors.required">Date Of Birth is required</span>
+            </span>
+        </div>
+        <div>
+            <label>Address:</label><br><textarea class="form-control" formControlName='address'></textarea>
+        </div>
+        <div>
+            <label>Phone Number:</label><br><input class="form-control" type="text" formControlName='ph_no'><br>
+            <span class="warning" *ngIf="personalData.controls.ph_no.dirty && personalData.controls.ph_no.invalid">
+                <span *ngIf="personalData.controls.ph_no.errors.minlength">Length should be 10</span>
+                <span *ngIf="personalData.controls.ph_no.errors.maxlength">Length should be 10</span></span>
+        </div>
+        <div>
+            <label>Email:</label><br><input class="form-control" type="text" formControlName="email"><br>
+            <span class="warning" *ngIf="personalData.controls.email.dirty && personalData.controls.email.invalid">
+                <span *ngIf="personalData.controls.email.errors.required">Email is Required</span>
+                <span *ngIf="personalData.controls.email.errors.email"> Email is not valid</span>
+            </span>
+        </div>
+        <button class="btn gobtn float-right" [disabled]="personalData.invalid"   (click)="addData()">Next</button>
+        </form>
+        
+        
+    
+   
+</div>

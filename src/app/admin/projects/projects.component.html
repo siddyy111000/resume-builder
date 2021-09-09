@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="form-group" style="max-width:900px">
+        <ng-container *ngFor="let project of projectsarray.controls;let i=index">
+        <form [formGroup]="project">
+            
+            <label>Project Title:-</label><br><input type="text" style="max-width:450px;" class="form-control" formControlName="project_title">
+            <label>Project Description:-</label><br>
+           <textarea class="form-control" formControlName="project_desc" cols="7" rows="4"></textarea>
+        
+            </form>
+        </ng-container>
+        <button (click)="addProject()" class="btn btn-primary mt-3">Add a Project</button>
+    <button (click)="submitData()" class="btn btn-success btn-right mt-3 float-right">Next</button>
+    </div>
+    
+</div>

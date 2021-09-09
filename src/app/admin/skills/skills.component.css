@@ -1,0 +1,9 @@
+.personalForm input[type="text"]
+{
+    border:none;
+    border-bottom: 1px solid blue;
+}
+.personalForm input[type="text"]:focus{
+    border-bottom: brown;
+    transition: .5s;
+}
